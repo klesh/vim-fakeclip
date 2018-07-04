@@ -268,7 +268,7 @@ endfunction
 
 
 function! s:write_clipboard_x(text)
-  call system('xclip', a:text)
+  call system('xclip -sel clipboard', a:text)
   return
 endfunction
 
